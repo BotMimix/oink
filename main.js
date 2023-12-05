@@ -1,6 +1,11 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain, ipcRenderer } = require('electron');
 // include the Node.js 'path' module at the top of your file
-const path = require('node:path')
+const path = require('node:path');
+const { autoUpdater, AppUpdater } = require("electron-updater");
+
+// Basic flags for electron-updater
+autoUpdater.autoDownload = false;
+autoUpdater.autoInstallOnAppQuit = true;
 
 // modify your existing createWindow() function
 const createWindow = () => {
