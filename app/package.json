@@ -5,7 +5,13 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager ."
+    "build": "electron-packager .",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/BotMimix/oink",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
   },
   "build": {
     "appId": "com.mimiBot.oinker",
@@ -22,10 +28,10 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^28.0.0",
+    "electron-builder": "^24.9.1",
     "electron-packager": "^17.1.2"
   },
   "dependencies": {
-    "electron-builder": "^24.9.1",
     "electron-updater": "^6.1.7"
   }
 }

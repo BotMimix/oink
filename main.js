@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, ipcRenderer } = require('electron');
+const { app, BrowserWindow, ipcMain, globalShortcut } = require('electron');
 // include the Node.js 'path' module at the top of your file
 const path = require('node:path');
 const { autoUpdater, AppUpdater } = require("electron-updater");
