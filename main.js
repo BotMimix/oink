@@ -25,7 +25,10 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
-  createWindow()
+  createWindow();
+
+  // check for updates from git repo
+  autoUpdater.checkForUpdates();
 })
 
 app.on('window-all-closed', () => {
