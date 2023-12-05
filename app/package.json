@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "nodemon": "nodemon --exec electron .",
     "build": "electron-packager .",
     "dist": "electron-builder"
   },
@@ -29,7 +30,8 @@
   "devDependencies": {
     "electron": "^28.0.0",
     "electron-builder": "^24.9.1",
-    "electron-packager": "^17.1.2"
+    "electron-packager": "^17.1.2",
+    "nodemon": "^3.0.2"
   },
   "dependencies": {
     "electron-updater": "^6.1.7"
