@@ -7,11 +7,25 @@
     "start": "electron .",
     "build": "electron-packager ."
   },
+  "build": {
+    "appId": "com.mimiBot.oinker",
+    "productName": "Oink app",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
   "keywords": [],
   "author": "Mimi Bot",
   "license": "ISC",
   "devDependencies": {
     "electron": "^28.0.0",
     "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "electron-builder": "^24.9.1",
+    "electron-updater": "^6.1.7"
   }
 }
